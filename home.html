@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Home Control</h1>
+    </header>
+
+    <div class="appliance-list">
+      <!-- Fan Control -->
+      <div class="appliance-card">
+        <h2>Fan</h2>
+        <label>
+          <input type="checkbox" class="toggle-switch" id="fan-toggle">
+          <span>ON/OFF</span>
+        </label>
+        <label for="fan-speed">Speed:</label>
+        <input type="range" id="fan-speed" min="1" max="5" value="3">
+      </div>
+
+      <!-- Air Conditioner Control -->
+      <div class="appliance-card">
+        <h2>Air Conditioner</h2>
+        <label>
+          <input type="checkbox" class="toggle-switch" id="ac-toggle">
+          <span>ON/OFF</span>
+        </label>
+        <label for="ac-temp">Temperature:</label>
+        <input type="number" id="ac-temp" min="16" max="30" value="24">
+      </div>
+
+      <!-- Lights Control -->
+      <div class="appliance-card">
+        <h2>Lights</h2>
+        <label>
+          <input type="checkbox" class="toggle-switch" id="lights-toggle">
+          <span>ON/OFF</span>
+        </label>
+        <label for="light-brightness">Brightness:</label>
+        <input type="range" id="light-brightness" min="0" max="100" value="50">
+        <label for="light-color">Color:</label>
+        <input type="color" id="light-color" value="#ffffff">
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

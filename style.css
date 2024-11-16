@@ -1,0 +1,55 @@
+/* Body background update for dynamic light color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(245, 249, 251);
+    color: #333;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0078d7;
+    transition: color 0.5s ease;
+}
+
+.appliance-list {
+    display: grid;
+    gap: 20px;
+}
+
+.appliance-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.appliance-card h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.toggle-switch {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+input[type="range"], input[type="color"], input[type="number"] {
+    height: 23px;
+    width: 100%;
+    margin: 10px 0;
+}
